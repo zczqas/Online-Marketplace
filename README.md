@@ -34,7 +34,8 @@ Make sure you have the following installed on your machine:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/c2c-marketplace.git
+   git clone 
+https://github.com/Infamous-Ironman/Projekt
 
 2. **Navigate to the project directory:**
 
