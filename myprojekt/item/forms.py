@@ -22,11 +22,11 @@ class NewItemForm(forms.ModelForm):
                 'class': INPUT_CLASSES
             }),
             'image': forms.FileInput(attrs={
-                'class': INPUT_CLASSES
+                'class': INPUT_CLASSES,
             }),
-            
+
         }
-        
+
 class EditItemForm(forms.ModelForm):
     class Meta:
         model = Item
@@ -42,7 +42,7 @@ class EditItemForm(forms.ModelForm):
                 'class': INPUT_CLASSES
             }),
             'image': forms.FileInput(attrs={
-                'class': INPUT_CLASSES
+                'class': INPUT_CLASSES,
             }),
-            
+
         }
