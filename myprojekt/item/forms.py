@@ -1,4 +1,5 @@
 from django import forms
+from django.contrib.auth.models import User
 
 from .models import Item
 
@@ -46,3 +47,8 @@ class EditItemForm(forms.ModelForm):
             }),
 
         }
+
+class AccountForm(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ['first_name', 'last_name', 'email']
