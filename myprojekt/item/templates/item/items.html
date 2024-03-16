@@ -8,7 +8,7 @@
     <div class="pb-6 grid grid-cols-4 gap-4 bg-gray-100">
         <div class="col-span-1">
             <form method="get" action="{% url 'item:items' %}">
-                <input name="query" class="w-full py-4 px-6 border rounded-xl" type="text" value="{{ query }}" placeholder="Find a Bike, a chair or a car.">
+                <input name="query" class="w-full py-4 px-6 border rounded-xl" type="text" value="{{ query }}" placeholder="Find plant to make your day.">
                 
                 <button class="mt-2 py-4 px-8 text-lg bg-teal-500 text-white rounded-xl">Search</button>
             </form>
@@ -45,7 +45,7 @@
                   <div>
                     <a href="{% url 'item:detail' item.id %}">
                         <div>
-                          <img src="{{ item.image.url }}" class="rounded-t-xl">
+                          <img src="{{ item.image.url }}" class="rounded-t-xl h-96 w-full">
                         </div>
           
                         <div class="p-6 bg-white rounded-b-xl">

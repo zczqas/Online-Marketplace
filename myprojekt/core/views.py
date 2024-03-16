@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib.auth import logout
 
 from item.models import Category, Item
 
@@ -34,6 +35,6 @@ def signup(request):
     })
 
 def logout_view(request):
-    logout_view(request)
+    logout(request)
 
     return redirect('core:index')
